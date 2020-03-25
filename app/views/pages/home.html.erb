@@ -11,7 +11,7 @@
 
         <div class="form-group">
           <%= label_tag :text_content %>
-          <%= text_area_tag :text_content, "During our 9-week (full-time) or 24-week (part-time) coding bootcamp, learn the most in-demand skills with motivated students, passionate teachers and a hands-on curriculum teaching you how to build software and solve problems.", class: "form-control", rows: "8", data: { target: 'live-reload.input', action: 'keyup->live-reload#displayHtml' } %>
+          <%= rich_text_area_tag :text_content, "During our 9-week (full-time) or 24-week (part-time) coding bootcamp, learn the most in-demand skills with motivated students, passionate teachers and a hands-on curriculum teaching you how to build software and solve problems.", data: { target: 'live-reload.input', action: 'trix-change->live-reload#displayHtml' } %>
         </div>
       <% end %>
     </div>
