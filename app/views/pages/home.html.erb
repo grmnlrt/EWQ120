@@ -3,7 +3,7 @@
 <div class="container-fluid" data-controller="live-reload" data-live-reload-raw-html="<%= raw_html %>">
   <div class="row">
     <div class="col-6">
-      <%= form_tag({}, { class: "mt-2"}) do %>
+      <%= form_tag class: "mt-2" do %>
         <div class="form-group">
           <%= label_tag :heading %>
           <%= text_field_tag :heading, 'Welcome to Le Wagon', class: "form-control", data: { target: 'live-reload.input', action: 'keyup->live-reload#displayHtml' } %>

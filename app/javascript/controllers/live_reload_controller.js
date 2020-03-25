@@ -22,7 +22,7 @@ export default class extends Controller {
   }
 
   get rawHtml() {
-    // simulates fetch to sendgrid API
+    // simulates a fetch() to sendgrid API
     return this.data.get('rawHtml');
   }
 }
